@@ -12,6 +12,19 @@
 </body>
 </html>
 
+<input id="name" placeholder="请输入你的名字">
+<button onclick="sayHi()">提交</button>
+
+<p id="result"></p>
+
+<script>
+function sayHi() {
+  const name = document.getElementById('name').value;
+  document.getElementById('result').innerText =
+    `你好，${name}，我们会尽快联系你`;
+}
+</script>
+
 <section id="hero">
   <h1>我为中小企业提供稳定、高质量的网站与系统</h1>
   <p>
